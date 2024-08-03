@@ -55,8 +55,8 @@
             bindings = <
 &none  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt N5 T     &mt NUMBER_6 Y  &mt N7 U       &mt NUMBER_8 I  &mt N9 O    &mt N0 P  &none
 &none  &hm LGUI A      &hm LALT S      &hm LCTRL D       &hm LSHIFT F    &kp G        &kp H           &hm RSHIFT J   &hm RCTRL K     &hm RALT L  &td0      &none
-&none  &lt 2 Z         &kp X           &kp C             &kp V           &kp B        &kp N           &kp M          &kp COMMA       &kp DOT     &kp FSLH  &none
-                                       &mt LEFT_GUI TAB  &mo NUM         &kp SPACE    &kp ESCAPE      &kp BACKSPACE  &kp RETURN
+&none  &kp Z           &kp X           &kp C             &kp V           &kp B        &kp N           &kp M          &kp COMMA       &kp DOT     &kp FSLH  &none
+                                       &mt LEFT_GUI TAB  &mo NUM         &kp SPACE    &lt 2 ESCAPE    &kp BACKSPACE  &kp RETURN
             >;
         };
 
