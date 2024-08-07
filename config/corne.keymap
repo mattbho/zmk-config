@@ -48,15 +48,24 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        cmdspace: ctrlspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp SPACE>;
+            label = "CTRLSPACE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&none  &kp Q       &kp W       &kp E        &kp R         &kp T      &kp Y         &kp U          &kp I        &kp O       &kp P          &none
-&none  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G      &kp H         &hm RSHIFT J   &hm RCTRL K  &hm RALT L  &mt LGUI SEMI  &none
-&none  &kp Z       &kp X       &kp C        &kp V         &kp B      &kp N         &kp M          &kp COMMA    &kp DOT     &kp FSLH       &none
-                               &kp ESCAPE   &lt 1 SPACE   &kp TAB    &lt 3 RETURN  &kp BACKSPACE  &kp RETURN
+&none  &kp Q       &kp W       &kp E        &kp R         &kp T      &kp Y         &kp U            &kp I        &kp O       &kp P          &none
+&none  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G      &kp H         &hm RSHIFT J     &hm RCTRL K  &hm RALT L  &mt LGUI SEMI  &none
+&none  &kp Z       &kp X       &kp C        &kp V         &kp B      &kp N         &kp M            &kp COMMA    &kp DOT     &kp FSLH       &none
+                               &kp ESCAPE   &lt 1 SPACE   &kp TAB    &lt 3 RETURN  &lt 2 BACKSPACE  &cmdspace
             >;
         };
 
